@@ -1,20 +1,27 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, isSupported } from 'firebase/analytics';
+import { siteConfig } from '../config/site';
 
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+let app = null;
+
+export const initializeFirebase = () => {
+  if (!siteConfig.firebase.enabled) {
+    console.warn('Firebase is disabled:', siteConfig.firebase.error);
+    return null;
+  }
+
+  try {
+    app = initializeApp(siteConfig.firebase.config!);
+    return app;
+  } catch (error) {
+    console.error('Error initializing Firebase:', error);
+    return null;
+  }
 };
 
-export const app = initializeApp(firebaseConfig);
-
-// Initialize Analytics only if it's supported
 export const initializeAnalytics = async () => {
+  if (!app) return null;
+
   try {
     const analyticsSupported = await isSupported();
     if (analyticsSupported) {

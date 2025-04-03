@@ -1,0 +1,134 @@
+{
+  "common": {
+    "search": "Search",
+    "home": "Home",
+    "about": "About",
+    "support": "Support",
+    "language": "Language",
+    "privacy": "Privacy Policy"
+  },
+  "manufacturers": {
+    "title": "Device Manufacturers",
+    "subtitle": "Select a manufacturer to view available devices",
+    "search": "Search manufacturers...",
+    "notFound": "No manufacturers found"
+  },
+  "devices": {
+    "title": "{manufacturer} Devices",
+    "subtitle": "Browse and find sensitivity settings for {manufacturer} devices",
+    "search": "Search devices...",
+    "notFound": "No devices found",
+    "source": "Settings source"
+  },
+  "sensitivities": {
+    "title": "{device} Sensitivity Settings",
+    "subtitle": "Optimized sensitivity settings for {device}",
+    "copy": "Copy",
+    "share": "Share",
+    "copied": "Settings copied to clipboard!",
+    "linkCopied": "Link copied to clipboard!",
+    "notFound": "Device not found",
+    "freeReview": "Free Review",
+    "dpi": "DPI"
+  },
+  "support": {
+    "title": "Support the Project",
+    "subtitle": "Your support helps us develop the project and make it better",
+    "methods": {
+      "donationalerts": {
+        "title": "DonationAlerts",
+        "description": "Support project development with any amount through DonationAlerts",
+        "button": "Support"
+      },
+      "crypto": {
+        "title": "Cryptocurrency",
+        "usdt": "USDT",
+        "ton": "TON"
+      }
+    },
+    "thankYou": {
+      "title": "Thank you for your support!",
+      "description": "Your support helps us develop the project and create new features. We greatly appreciate everyone who helps make FF Sensitivities better!"
+    }
+  },
+  "about": {
+    "title": "FF Sensitivities",
+    "subtitle": "Professional tool for optimizing sensitivity settings in mobile games",
+    "features": {
+      "title": "Features",
+      "optimized": {
+        "title": "Optimized Settings",
+        "description": "Carefully selected sensitivity parameters for maximum accuracy"
+      },
+      "search": {
+        "title": "Easy Search",
+        "description": "Quick access to settings for your device"
+      },
+      "share": {
+        "title": "Share Settings",
+        "description": "Share your settings with other players"
+      }
+    },
+    "download": {
+      "title": "Download the app",
+      "subtitle": "Available on popular platforms"
+    },
+    "community": {
+      "title": "Join the community",
+      "telegram": "Telegram channel",
+      "vk": "VKontakte",
+      "website": "Developer's website",
+      "github": "GitHub"
+    },
+    "footer": {
+      "madeWith": "Made with",
+      "for": "for the gaming community"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2024",
+    "introduction": {
+      "title": "Introduction",
+      "description": "This Privacy Policy describes how FF Sensitivities collects, uses, and shares your information when you use our services."
+    },
+    "information": {
+      "title": "Information We Collect",
+      "automatic": {
+        "title": "Automatically Collected Information",
+        "description": "When you use our service, we automatically collect certain information, including:",
+        "items": {
+          "analytics": "Usage data through Firebase Analytics",
+          "device": "Device information (model, OS version)",
+          "language": "Language preferences",
+          "interaction": "App interaction data"
+        }
+      },
+      "purpose": {
+        "title": "How We Use Your Information",
+        "items": {
+          "improve": "Improve and optimize our services",
+          "analyze": "Analyze usage patterns",
+          "communicate": "Communicate important updates",
+          "support": "Provide customer support"
+        }
+      }
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "description": "We do not sell or rent your personal information. We may share aggregated, non-personal information for analytical purposes."
+    },
+    "security": {
+      "title": "Data Security",
+      "description": "We implement appropriate security measures to protect your information from unauthorized access or disclosure."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "description": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about this Privacy Policy, please contact us through our support channels."
+    }
+  }
+}

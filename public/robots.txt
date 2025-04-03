@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /sensitivities
-Allow: /devices
-Allow: /about
-Allow: /contact
 
-Sitemap: https://ffsensitivities.com/sitemap.xml 
+Sitemap: https://ffsensitivities.web.app/sitemap.xml

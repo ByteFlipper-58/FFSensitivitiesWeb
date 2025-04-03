@@ -1,14 +1,16 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Home, Info } from 'lucide-react';
 
 export const BottomTabBar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
 
   const tabs = [
-    { name: 'Главная', path: '/', icon: Home },
-    { name: 'О проекте', path: '/about', icon: Info },
+    { name: t('common.home'), path: '/', icon: Home },
+    { name: t('common.about'), path: '/about', icon: Info },
   ];
 
   return (
